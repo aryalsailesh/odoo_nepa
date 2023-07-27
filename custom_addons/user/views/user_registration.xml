@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- my_module/views/my_custom_model_view.xml -->
+
+<!-- my_module/views/my_frontend_form.xml -->
+
+<odoo>
+    <data>
+        <template id="user_form_view" name="User Form">
+            <t t-call="website.layout">
+                <form action="/user/submit/" method="post">
+                    <input type="text" name="name" placeholder="Name" required="True"/>
+                    <input type="email" name="email" placeholder="Email" required="True"/>
+                    <input type="text" name="age" placeholder="Age" required="True"/>
+                    <input type="text" name="phone" placeholder="Phone" required="True"/>
+                    <!-- Add other fields here -->
+                    <button type="submit">Submit</button>
+                </form>
+            </t>
+            
+        </template>
+    </data>
+</odoo>
